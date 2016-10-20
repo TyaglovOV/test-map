@@ -123,6 +123,10 @@ $(document).ready(function() {
       zoom:10
     });
 
+    this.mainMap.controls
+      // Кнопка изменения масштаба.
+      .add('zoomControl', { left: 5, top: 5 })
+
     this.toFullViewport();
     this.updateMapInfo();
   }
